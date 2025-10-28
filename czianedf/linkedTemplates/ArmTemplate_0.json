@@ -283,14 +283,14 @@
 											},
 											"forecast_dates": {
 												"value": {
-													"value": "@activity('Cities').output.firstRow.hourly.time",
+													"value": "@activity('LookWeather').output.firstRow.hourly.time",
 													"type": "Expression"
 												},
 												"type": "String"
 											},
 											"temperatures": {
 												"value": {
-													"value": "@activity('Cities').output.firstRow.hourly.temperature_2m",
+													"value": "@activity('LookWeather').output.firstRow.hourly.temperature_2m",
 													"type": "Expression"
 												},
 												"type": "String"
