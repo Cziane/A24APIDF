@@ -1,0 +1,9 @@
+{
+	"name": "czianedf",
+	"location": "francecentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8a63b1cb-24ed-4c88-9a7d-5d5e14fc0135",
+		"tenantId": "e5d15069-41a2-48be-a3f3-d7f52db16425"
+	}
+}
