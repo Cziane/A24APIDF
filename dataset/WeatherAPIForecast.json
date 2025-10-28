@@ -1,0 +1,35 @@
+{
+	"name": "WeatherAPIForecast",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "WeatherAPI",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"latitude": {
+					"value": "@dataset().latitude",
+					"type": "Expression"
+				},
+				"longitude": {
+					"value": "@dataset().longitude",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"latitude": {
+				"type": "string"
+			},
+			"longitude": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		},
+		"schema": {}
+	}
+}

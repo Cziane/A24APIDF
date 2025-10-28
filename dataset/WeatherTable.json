@@ -1,0 +1,39 @@
+{
+	"name": "WeatherTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "city_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "forecast_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "temperature",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "import_time",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "daily_temperature"
+		}
+	}
+}
