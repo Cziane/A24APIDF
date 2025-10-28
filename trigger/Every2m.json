@@ -1,0 +1,24 @@
+{
+	"name": "Every2m",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "RetrieveCities",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 2,
+				"startTime": "2025-10-28T13:37:00",
+				"timeZone": "Romance Standard Time"
+			}
+		}
+	}
+}
